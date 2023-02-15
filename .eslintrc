@@ -1,0 +1,31 @@
+{
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "plugins": [
+    "import",
+    "react",
+    "jsx-a11y",
+    "simple-import-sort"
+  ],
+  "rules": {
+    "import/no-anonymous-default-export": 1,
+    "react/react-in-jsx-scope": 0,
+    "react/prop-types": 2,
+    "jsx-a11y/alt-text": 1
+  },
+  "ignorePatterns": [
+    "*.stories.js"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 11,
+    "sourceType": "module",
+    "allowImportExportEverywhere": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
