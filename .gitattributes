@@ -1,0 +1,18 @@
+# Set the line-endings
+* text=auto eol=lf
+
+# Set non-text files; such as fonts, images and video files
+*.bmp binary
+*.gif binary
+*.jpg binary
+*.png binary
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary
+*.eot binary
+*.mp4 binary
+*.gz binary
+*.tar binary
+
+.editorconfig export-ignore
