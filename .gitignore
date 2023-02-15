@@ -1,0 +1,39 @@
+// .gitnignore
+# next.js build output
+.next
+/out/
+
+# dotenv environment variables file (build for Zeit Now)
+.env
+.env.build
+
+# Dependency directories
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDEs
+*.pydevproject
+.project
+.metadata
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+.externalToolBuilders/
+*.launch
+.cproject
+.buildpath
+nbproject/
+.idea
+
+# OS
+[Tt]humbs.db
+[Dd]esktop.ini
+*.DS_store
+.DS_store?

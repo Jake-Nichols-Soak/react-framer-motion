@@ -1,0 +1,38 @@
+{
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "plugins": [
+    "import",
+    "react",
+    "jsx-a11y",
+    "simple-import-sort"
+  ],
+  "rules": {
+    "quotes": ["error", "single"],
+    "jsx-quotes": ["error", "prefer-double"],
+    "semi": "error",
+    "semi-style": ["error", "last"],
+    "no-useless-catch": "error",
+    "@next/next/no-img-element": "off",
+    "react/prop-types": "error",
+    "react/react-in-jsx-scope": "off",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error"
+  },
+  "ignorePatterns": [
+    "*.stories.js"
+  ],
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": 11,
+    "sourceType": "module",
+    "allowImportExportEverywhere": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
