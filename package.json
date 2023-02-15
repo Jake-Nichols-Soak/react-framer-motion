@@ -1,0 +1,62 @@
+{
+  "name": "@soak/react-embeddable-framework",
+  "version": "2.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "NODE_ENV=development npx mix",
+    "build:prod": "npx mix --production",
+    "serve": "npx mix watch --hot",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint --fix ./src",
+    "tailwind:preview": "tailwind-config-viewer -o -p 3100"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/soak/iii-embeddable-infographic-react.git"
+  },
+  "keywords": [],
+  "author": "Soak Digital <devops@soak.co.uk>",
+  "license": "Proprietary",
+  "homepage": "https://github.com/SoakDigital/react-embeddable-framework#readme",
+  "devDependencies": {
+    "@babel/preset-react": "^7.16.5",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
+    "autoprefixer": "^10.4.0",
+    "browser-sync": "^2.27.7",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "eslint": "^8.5.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "git-last-commit": "^1.0.1",
+    "laravel-mix": "^6.0.39",
+    "laravel-mix-postcss-config": "^1.4.0",
+    "laravel-mix-replace-in-file": "^0.1.0",
+    "postcss": "^8.4.5",
+    "postcss-prepend-selector": "^0.3.1",
+    "react-refresh": "^0.11.0",
+    "replace-in-file": "^6.3.2",
+    "tailwind-config-viewer": "^1.6.3",
+    "tailwindcss": "^3.0.7",
+    "zip-a-folder": "^1.1.0"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.4.2",
+    "axios": "^0.24.0",
+    "better-react-spinkit": "^2.0.4",
+    "classnames": "^2.3.1",
+    "dom-loaded": "^3.0.0",
+    "dot-prop": "^6.0.1",
+    "fg-loadcss": "^3.1.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-axios-hook": "^2.0.2",
+    "react-dom": "^17.0.2",
+    "react-intl": "^5.24.0",
+    "react-router-dom": "^6.2.1",
+    "swr": "^1.1.1"
+  }
+}

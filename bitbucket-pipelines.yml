@@ -1,0 +1,21 @@
+---
+
+image: node:lts-alpine
+
+pipelines:
+  tags:
+    '*':
+      - step:
+          name: Build Distribution
+          caches:
+            - node
+          script:
+            - npm ci
+            - npm run build:prod
+            - apk add --update zip
+            - zip -qr iii-$BITBUCKET_TAG.zip dist/index.js dist/index.html dist/data
+            - pipe: atlassian/bitbucket-upload-file:0.3.2
+              variables:
+                BITBUCKET_USERNAME: $USERNAME
+                BITBUCKET_APP_PASSWORD: $PASSWORD
+                FILENAME: $BITBUCKET_REPO_SLUG-$BITBUCKET_TAG.zip
