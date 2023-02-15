@@ -1,3 +1,16 @@
 @tailwind base;
+
+section {
+    @apply py-5;
+}
+
+ul {
+    @apply max-w-fit;
+}
+
+button {
+    @apply border-2 border-blue-300 py-3 px-6;
+}
+
 @tailwind components;
 @tailwind utilities;
